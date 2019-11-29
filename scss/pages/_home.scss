@@ -1,0 +1,58 @@
+.timeline{
+    .main-heading{
+        text-align: center;
+        margin-top: 100px;
+    }
+    ul{
+        padding: 150px 0 0;
+        li{
+            width: 2px;
+            height: 300px;
+            background: #979797;
+            position: relative;
+            margin: 0 auto;
+            list-style: none;
+            .company-name{
+                width: 460px;
+                font-size: 55px;
+                font-family: $primary-font;
+                color: #9b9b9b;
+                opacity: 0.1;
+                top: 50px;
+                &:hover{
+                    opacity: 1;
+                    cursor: pointer;
+                }
+            }
+            .company-details{
+                width: 400px;
+                top: 0;
+                .section-heading{
+                    margin: 0 0 25px 0;
+                }
+            }
+            div:first-child{
+                position: absolute;
+                right: 100px;
+                text-align: right;
+            }
+            div:last-of-type{
+                position: absolute;
+                left: 65px;
+                text-align: left;
+            }
+            .dot{
+                position: absolute;
+                top: 0;
+                left: -9px;
+                background: $highlight-color;
+                border-radius: 50%;
+                padding: 10px;
+            }
+            &:last-child{
+                // height: 0;
+                background: #ffffff;
+            }
+        }
+    }
+}

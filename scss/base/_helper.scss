@@ -1,0 +1,14 @@
+// container 
+.container{
+    max-width: $max-width;
+    min-width: 300px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+// clearfix
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: block;
+}

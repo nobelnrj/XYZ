@@ -1,0 +1,26 @@
+footer{
+    background: #E6e7f4fe;
+    border-top: solid 2px #bbbbbb;
+    padding: 50px 0;
+    div{
+        ul{ 
+            float: left;
+            list-style: none;
+        li:first-child{
+                font-size: 26px;
+                font-family: $primary-font;
+                color: $heading-color;
+                margin-bottom: 25px;
+            }
+            .link{
+                margin-bottom: 30px;
+            }
+        }
+        .full , .policies , .others{
+            width: 20%;
+        }
+        .products{
+            width: 40%;
+        }
+    }
+}

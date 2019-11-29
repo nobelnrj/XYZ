@@ -1,0 +1,1 @@
+function menutoggle(){document.querySelector(".menu").classList.toggle("show")}var header=document.querySelector("header");window.onscroll=function(){50<window.pageYOffset?header.classList.add("sticky"):header.classList.remove("sticky")};
