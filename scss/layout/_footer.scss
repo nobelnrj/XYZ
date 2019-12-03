@@ -6,21 +6,39 @@ footer{
         ul{ 
             float: left;
             list-style: none;
-        li:first-child{
+            li:first-child{
                 font-size: 26px;
                 font-family: $primary-font;
                 color: $heading-color;
                 margin-bottom: 25px;
+                @include bp(tablet){
+                    font-size: 15px;
+                }
             }
             .link{
                 margin-bottom: 30px;
+                @include bp(phone){
+                    margin-bottom: 10px;
+                }
             }
         }
-        .full , .policies , .others{
+        .full{
             width: 20%;
+            @include bp(phone){
+                width: 40%;
+            }
+        }
+        .policies , .others{
+            width: 20%;
+            @include bp(phone){
+                width: 50%;
+            }
         }
         .products{
             width: 40%;
+            @include bp(phone){
+                width: 60%;
+            }
         }
     }
 }

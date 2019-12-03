@@ -1,12 +1,10 @@
 @import './abstract/variables';
+@import './abstract/mixins';
 @import './base/base';
 @import './base/helper';
+@import './abstract/media';
 @import './base/typography';
 @import './layout/header';
 @import './layout/hero';
-@import './pages/home';
+@import './components/timeline';
 @import './layout/footer';
-@import './abstract/media';
-@include desktop();
-@include tablet();
-@include phone();

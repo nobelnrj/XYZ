@@ -1,0 +1,26 @@
+@mixin background($page) {
+    @if $page == home{
+        background: url(../../img/hero-home.png);
+    }
+    @else if $page == experiment{
+        background: url(../../img/globe.png);
+    }
+    @else if $page == articles{
+        background: url(../../img/smile.png);
+    }
+    @else if $page == joinus{
+        background: url(../../img/india.png);
+    }
+    @else if $page == contactus{
+        background: url(../../img/contact.png);
+    }
+    background-position: right;
+    background-size: 650px 400px;
+    background-repeat: no-repeat;
+    @include bp(tablet){
+        background-size: 450px 300px;
+    }
+    @include bp(phone){
+        background-size: 300px 200px;
+    }
+}

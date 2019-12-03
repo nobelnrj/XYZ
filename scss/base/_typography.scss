@@ -1,27 +1,59 @@
+@import '../abstract/media';
 .main-heading{
     font-size: 52px;
     font-weight: 300;
     line-height: 72px;
     font-family: $primary-font;
     color: $heading-color;
+    @include bp(desktop){
+        font-size: 45px;
+    }
+    @include bp(tablet){
+        font-size: 40px;
+    }
+    @include bp(phone){
+        font-size: 35px;
+        line-height: 60px;
+    }
 }
 
 .main-content{
     font-size: 24px;
     font-family: $primary-font;
     color: $content-color;
+    @include bp(desktop){
+        font-size: 20px;
+    }
 }
 
 .section-heading{
     font-size: 36px;
     font-family: $primary-font;
     color: $heading-color;
+    @include bp(desktop){
+        font-size: 30px;
+    }
+    @include bp(tablet){
+        font-size: 20px;
+    }
+    @include bp(phone){
+        font-size: 15px;
+    }
 }
 
 .section-content{
     font-size: 24px;
     font-family: $primary-font;
     color: $content-color;
+    @include bp(desktop){
+        font-size: 20px;
+    }
+    @include bp(tablet){
+        font-size: 15px;
+    }
+    @include bp(phone){
+        font-size: 15px;
+    }
 }
 
 .link{
@@ -30,4 +62,7 @@
     font-family: $secondary-font;
     color: $content-color;
     text-decoration: none;
+    @include bp(desktop){
+        font-size: 15px;
+    }
 }

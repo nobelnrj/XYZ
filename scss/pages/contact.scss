@@ -6,6 +6,3 @@
 @import '../layout/hero';
 @import '../layout/footer';
 @import '../abstract/media';
-@include desktop();
-@include tablet();
-@include phone();

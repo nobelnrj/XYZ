@@ -1,36 +1,23 @@
+@import '../abstract/mixins';
+
 .hero{
     position: relative;
     padding: 200px 10px 100px;
-    height: 650px;
+    height: 100vh;
     &#home{
-        background: url(../img/hero-home.png);
-        background-position: right;
-        background-size: 650px 400px;
-        background-repeat: no-repeat;
+        @include background(home);
     }
-    &#experiments{
-        background: url(../../img/globe.png);
-        background-position: right;
-        background-size: 600px 500px;
-        background-repeat: no-repeat;
+    &#experiment{
+        @include background(experiment);
     }
     &#articles{
-        background: url(../../img/smile.png);
-        background-position: right;
-        background-size: 600px 500px;
-        background-repeat: no-repeat;
+        @include background(articles);
     }
     &#joinus{
-        background: url(../../img/india.png);
-        background-position: right;
-        background-size: 600px 500px;
-        background-repeat: no-repeat;
+        @include background(joinus);
     }
     &#contactus{
-        background: url(../../img/contact.png);
-        background-position: right;
-        background-size: 600px 500px;
-        background-repeat: no-repeat;
+        @include background(contactus);
     }
     .main-heading{
         max-width: 420px;

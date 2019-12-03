@@ -5,6 +5,12 @@
     }
     ul{
         padding: 150px 0 0;
+        @include bp(tablet){
+            padding: 100px 0 0;
+        }
+        @include bp(phone){
+            padding: 50px 0 0;
+        }
         li{
             width: 2px;
             height: 300px;
@@ -12,6 +18,12 @@
             position: relative;
             margin: 0 auto;
             list-style: none;
+            @include bp(tablet){
+                height: 200px;
+            }
+            @include bp(phone){
+                height: 270px;
+            }
             .company-name{
                 width: 460px;
                 font-size: 55px;
@@ -19,6 +31,18 @@
                 color: #9b9b9b;
                 opacity: 0.1;
                 top: 50px;
+                @include bp(desktop){
+                    width: 300px;
+                    font-size: 35px;
+                }
+                @include bp(desktop){
+                    width: 105px;
+                    font-size: 25px;
+                }
+                @include bp(phone){
+                    width: 90px;
+                    font-size: 20px;
+                }
                 &:hover{
                     opacity: 1;
                     cursor: pointer;
@@ -27,19 +51,43 @@
             .company-details{
                 width: 400px;
                 top: 0;
+                @include bp(desktop){
+                    width: 300px;
+                }
+                @include bp(tablet){
+                    width: 170px;
+                }
+                @include bp(phone){
+                    width: 100px;
+                }
                 .section-heading{
                     margin: 0 0 25px 0;
+                    @include bp(phone){
+                        margin-bottom: 10px;
+                    }
                 }
             }
             div:first-child{
                 position: absolute;
                 right: 100px;
                 text-align: right;
+                @include bp(tablet){
+                    right: 30px;
+                }
+                @include bp(phone){
+                    right: 20px;
+                }
             }
             div:last-of-type{
                 position: absolute;
                 left: 65px;
                 text-align: left;
+                @include bp(tablet){
+                    left: 30px;
+                }
+                @include bp(phone){
+                    left: 20px;
+                }
             }
             .dot{
                 position: absolute;

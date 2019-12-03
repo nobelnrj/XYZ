@@ -9,6 +9,9 @@
     position: relative;
     padding: 70px 0;
     text-align: center;
+    @include bp(tablet){
+        padding: 50px 0;
+    }
     .experiment-no{
         font-size: 32px;
         color: #9b9b9b;
@@ -26,12 +29,19 @@
         margin: 0 auto;
         font-weight: normal;
         margin-bottom: 35px;
+        @include bp(tablet){
+            max-width: 300px;
+        }
     }
     .section-content{
         max-width: 620px;
         height: 80px;
         margin: 0 auto;
         overflow: hidden;
+        @include bp(tablet){
+            max-width: 250px;
+            height: 55px;
+        }
     }
     &::after{
         content: '';
@@ -50,6 +60,3 @@
 }
 @import '../layout/footer';
 @import '../abstract/media';
-@include desktop();
-@include tablet();
-@include phone();
