@@ -1,0 +1,19 @@
+.join-us{
+    padding: 130px 10px 500px;
+    &>.section-heading{
+        float: left;
+        width: 400px;
+        height: 350px;
+        border-right: solid 1px #979797;
+        margin: 10px 0 0 0;
+        font-size: 28px;
+    }
+    ul{
+        float: left;
+        width: 400px;
+        margin: 10px 0 0 80px;
+        .section-content{
+            line-height: 70px;
+        }
+    }
+}

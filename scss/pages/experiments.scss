@@ -4,59 +4,6 @@
 @import '../base/typography';
 @import '../layout/header';
 @import '../layout/hero';
-// experiments
-.experiments{
-    position: relative;
-    padding: 70px 0;
-    text-align: center;
-    @include bp(tablet){
-        padding: 50px 0;
-    }
-    .experiment-no{
-        font-size: 32px;
-        color: #9b9b9b;
-        font-family: $primary-font;
-        margin-bottom: 20px;
-    }
-    .experiment-name{
-        font-size: 56px;
-        color: #f6d500;
-        font-family: $primary-font;
-        margin-bottom: 20px;
-    }
-    .section-heading{
-        max-width: 700px;
-        margin: 0 auto;
-        font-weight: normal;
-        margin-bottom: 35px;
-        @include bp(tablet){
-            max-width: 300px;
-        }
-    }
-    .section-content{
-        max-width: 620px;
-        height: 80px;
-        margin: 0 auto;
-        overflow: hidden;
-        @include bp(tablet){
-            max-width: 250px;
-            height: 55px;
-        }
-    }
-    &::after{
-        content: '';
-        background: $content-color;
-        position: absolute;
-        width: 200px;
-        height: 2px;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        opacity: 0.3;
-    }
-    &:last-child::after{
-        background: none;
-    }
-}
+@import '../layout/experiments';
 @import '../layout/footer';
 @import '../abstract/media';

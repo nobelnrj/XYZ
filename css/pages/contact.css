@@ -22,6 +22,9 @@ a {
   clear: both;
   display: block; }
 
+ul {
+  list-style: none; }
+
 .main-heading {
   font-size: 52px;
   font-weight: 300;
@@ -50,7 +53,8 @@ a {
 .section-heading {
   font-size: 36px;
   font-family: Helvetica Neue, Arial, sans-serif;
-  color: #000000; }
+  color: #000000;
+  font-weight: normal; }
   @media (max-width: 1024px) {
     .section-heading {
       font-size: 30px; } }
@@ -160,8 +164,11 @@ header {
 
 .hero {
   position: relative;
-  padding: 200px 10px 100px;
+  padding: 200px 10px;
   height: 100vh; }
+  @media (max-width: 425px) {
+    .hero {
+      padding: 130px 10px; } }
   .hero#home {
     background: url(../../img/hero-home.png);
     background-position: right;
@@ -240,41 +247,5 @@ header {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
-
-footer {
-  background: #E6e7f4fe;
-  border-top: solid 2px #bbbbbb;
-  padding: 50px 0; }
-  footer div ul {
-    float: left;
-    list-style: none; }
-    footer div ul li:first-child {
-      font-size: 26px;
-      font-family: Helvetica Neue, Arial, sans-serif;
-      color: #000000;
-      margin-bottom: 25px; }
-      @media (max-width: 768px) {
-        footer div ul li:first-child {
-          font-size: 15px; } }
-    footer div ul .link {
-      margin-bottom: 30px; }
-      @media (max-width: 425px) {
-        footer div ul .link {
-          margin-bottom: 10px; } }
-  footer div .full {
-    width: 20%; }
-    @media (max-width: 425px) {
-      footer div .full {
-        width: 40%; } }
-  footer div .policies, footer div .others {
-    width: 20%; }
-    @media (max-width: 425px) {
-      footer div .policies, footer div .others {
-        width: 50%; } }
-  footer div .products {
-    width: 40%; }
-    @media (max-width: 425px) {
-      footer div .products {
-        width: 60%; } }
 
 /*# sourceMappingURL=../../maps/pages/contact.css.map */

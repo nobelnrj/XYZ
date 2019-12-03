@@ -1,0 +1,30 @@
+.articles-content{
+    padding: 120px 10px 190px;
+    @include bp(tablet){
+        padding: 120px 10px 100px;
+    }
+    @include bp(phone){
+        padding: 50px 10px;
+    }
+    .section-content{
+        margin-bottom: 20px;
+        line-height: 44px;
+        @include bp(phone){
+            line-height: 30px;
+        }
+    }
+    .article-image{
+        float: right;
+        width: 400px;
+        height: 300px;
+        margin: 20px 0 100px 70px;
+        @include bp(tablet){
+            width: 280px;
+            height: 200px;
+            margin: 10px 10px;
+        }
+        @include bp(phone){
+            float: none;
+        }
+    }
+}

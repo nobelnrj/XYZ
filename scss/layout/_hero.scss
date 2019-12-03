@@ -2,8 +2,11 @@
 
 .hero{
     position: relative;
-    padding: 200px 10px 100px;
+    padding: 200px 10px;
     height: 100vh;
+    @include bp(phone){
+        padding: 130px 10px;
+    }
     &#home{
         @include background(home);
     }

@@ -4,18 +4,6 @@
 @import '../base/typography';
 @import '../layout/header';
 @import '../layout/hero';
-.articles-content{
-    padding: 120px 0 190px;
-    .section-content{
-        margin-bottom: 20px;
-        line-height: 44px;
-    }
-    .article-image{
-        float: right;
-        width: 400px;
-        height: 300px;
-        margin: 20px 0 100px 70px;
-    }
-}
+@import '../layout/articles';
 @import '../layout/footer';
 @import '../abstract/media';
