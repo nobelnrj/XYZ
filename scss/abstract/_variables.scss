@@ -1,7 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+
 // color 
 $heading-color: #000000;
 $content-color: #9b9b9b;
 $highlight-color: #f6d500;
+
+// background
+$bg-image: (
+    "home":"/img/hero-home.png",
+    "experiment":"/img/globe.png",
+    "articles":"/img/smile.png",
+    "joinus":"/img/india.png",
+    "contactus":"/img/contact.png"
+);
 
 //font-family
 $primary-font: Helvetica Neue,Arial,sans-serif;

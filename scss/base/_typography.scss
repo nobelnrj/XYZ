@@ -63,6 +63,7 @@
     font-family: $secondary-font;
     color: $content-color;
     text-decoration: none;
+    font-weight: normal;
     @include bp(desktop){
         font-size: 15px;
     }

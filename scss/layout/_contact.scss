@@ -1,0 +1,37 @@
+.contact{
+    padding: 70px 10px 300px;
+    background: url(../../img/world.png);
+    background-position: top 300px right 0;
+    background-repeat: no-repeat;
+    background-size: 900px 500px;
+    @include bp(tablet){
+        background-size: 500px 300px;
+        padding: 70px 10px 70px;
+    }
+    @include bp(phone){
+        background-size: 400px 200px;
+    }
+    .contact-details{
+        width: 230px;
+        .main-heading{
+            margin: 0 0 44px;
+        }
+        ul{
+            li{
+                margin-bottom: 50px;
+                line-height: 50px;
+                @include bp(tablet){
+                    line-height: 20px;
+                }
+                .section-heading{
+                    font-size: 32px;
+                    margin-bottom: 25px;
+                }
+                a{
+                    color: #000000;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

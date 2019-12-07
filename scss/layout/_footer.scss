@@ -1,24 +1,31 @@
 footer{
-    background: #E6e7f4fe;
-    border-top: solid 2px #bbbbbb;
+    background: #e7f4fe33;
+    border-top: solid 2px #bbbbbb33;
     padding: 50px 0;
     div{
         ul{ 
             float: left;
             list-style: none;
-            li:first-child{
-                font-size: 26px;
-                font-family: $primary-font;
-                color: $heading-color;
-                margin-bottom: 25px;
-                @include bp(tablet){
-                    font-size: 15px;
+            li{
+                &:first-child{
+                    font-size: 26px;
+                    font-family: $primary-font;
+                    color: $heading-color;
+                    margin-bottom: 25px;
+                    @include bp(tablet){
+                        font-size: 15px;
+                        font-weight: bold;
+                    }
                 }
-            }
-            .link{
-                margin-bottom: 30px;
-                @include bp(phone){
-                    margin-bottom: 10px;
+                a{
+                    font-size: 20px;
+                    line-height: 50px;
+                    color: $content-color;
+                    font-family: $secondary-font;
+                    @include bp(tablet){
+                        font-size: 15px;
+                        line-height: 30px;
+                    }
                 }
             }
         }

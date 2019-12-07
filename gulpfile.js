@@ -2,6 +2,7 @@ const gulp = require('gulp'),
     sass = require('gulp-sass'),
     sourcemap = require('gulp-sourcemaps'),
     imagemin = require('gulp-imagemin'),
+    concat = require('gulp-concat');
     uglify = require('gulp-uglify'),
     uglifycss = require('gulp-uglifycss'),
     autoprefixer = require('gulp-autoprefixer'),
@@ -27,6 +28,7 @@ function concatCSS() {
 
 function javascript() {
     return gulp.src('./js/*.js')
+        .pipe(concat('main.js'))
         .pipe(uglify())
         .pipe(gulp.dest('./dist/js'));
 }

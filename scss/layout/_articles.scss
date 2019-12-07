@@ -17,7 +17,13 @@
         float: right;
         width: 400px;
         height: 300px;
+        opacity: 0;
+        transform: translateY(-40px);
         margin: 20px 0 100px 70px;
+        &.animate{
+            opacity: 1;
+            transform: translateY(0);
+        }
         @include bp(tablet){
             width: 280px;
             height: 200px;

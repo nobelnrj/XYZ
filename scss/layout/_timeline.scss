@@ -1,10 +1,11 @@
 .timeline{
+    padding: 100px 0 0 0;
     .main-heading{
         text-align: center;
-        margin-top: 100px;
     }
     ul{
         padding: 150px 0 0;
+        overflow-x: hidden;
         @include bp(tablet){
             padding: 100px 0 0;
         }
@@ -12,7 +13,7 @@
             padding: 50px 0 0;
         }
         li{
-            width: 2px;
+            width: 1px;
             height: 300px;
             background: #979797;
             position: relative;
@@ -28,8 +29,7 @@
                 width: 460px;
                 font-size: 55px;
                 font-family: $primary-font;
-                color: #9b9b9b;
-                opacity: 0.1;
+                color: #9b9b9b1f;
                 top: 50px;
                 @include bp(desktop){
                     width: 300px;
@@ -40,12 +40,8 @@
                     font-size: 25px;
                 }
                 @include bp(phone){
-                    width: 90px;
-                    font-size: 20px;
-                }
-                &:hover{
-                    opacity: 1;
-                    cursor: pointer;
+                    width: 100px;
+                    font-size: 18px;
                 }
             }
             .company-details{
@@ -58,7 +54,7 @@
                     width: 170px;
                 }
                 @include bp(phone){
-                    width: 100px;
+                    width: 120px;
                 }
                 .section-heading{
                     margin: 0 0 25px 0;
@@ -71,22 +67,30 @@
                 position: absolute;
                 right: 100px;
                 text-align: right;
+                transform: translateX(-100px);
+                transition: 1s all ease;
                 @include bp(tablet){
                     right: 30px;
+                    transform: translateX(-70px);
                 }
                 @include bp(phone){
                     right: 20px;
+                    transform: translateX(-50px);
                 }
             }
             div:last-of-type{
                 position: absolute;
                 left: 65px;
                 text-align: left;
+                transform: translateX(100px);
+                transition: 1s all ease;
                 @include bp(tablet){
                     left: 30px;
+                    transform: translateX(70px);
                 }
                 @include bp(phone){
                     left: 20px;
+                    transform: translateX(30px);
                 }
             }
             .dot{
@@ -97,9 +101,44 @@
                 border-radius: 50%;
                 padding: 10px;
             }
+            .circle{
+                position: absolute;
+                top: -12px;
+                left: -21px;
+                border: 10px solid $highlight-color;
+                padding: 12px;
+                border-radius: 50%;
+                opacity: 0;
+                animation: pulse 3s ease-out 1s infinite;
+            }
+            @keyframes pulse{
+                0% {
+                    transform: scale(0);
+                    opacity: 0.0;
+                 }
+                 50% {
+                    transform: scale(0.4);
+                    opacity: 0.5;
+                 }
+                 100% {
+                    transform: scale(1);
+                    opacity: 0.0;
+                 }
+            }
             &:last-child{
                 // height: 0;
                 background: #ffffff;
+            }
+            &.animate{
+                div:first-child{
+                    transform: translateX(0);
+                }
+                div:last-of-type{
+                    transform: translateX(0);
+                }
+                .company-name{
+                    color: #9b9b9b;
+                }
             }
         }
     }

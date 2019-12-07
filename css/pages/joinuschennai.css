@@ -261,34 +261,77 @@ header {
 .hero#contactus {
   background-image: url(/img/contact.png); }
 
-.contact {
-  padding: 70px 10px 300px;
-  background: url(../../img/world.png);
-  background-position: top 300px right 0;
-  background-repeat: no-repeat;
-  background-size: 900px 500px; }
+.join-us {
+  padding: 130px 10px 200px;
+  overflow-x: hidden; }
   @media (max-width: 768px) {
-    .contact {
-      background-size: 500px 300px;
-      padding: 70px 10px 70px; } }
+    .join-us {
+      padding: 70px 10px 200px; } }
   @media (max-width: 425px) {
-    .contact {
-      background-size: 400px 200px; } }
-  .contact .contact-details {
-    width: 230px; }
-    .contact .contact-details .main-heading {
-      margin: 0 0 44px; }
-    .contact .contact-details ul li {
-      margin-bottom: 50px;
-      line-height: 50px; }
+    .join-us {
+      padding: 130px 10px 20px; } }
+  .join-us .places {
+    float: left;
+    width: 400px;
+    height: 350px;
+    border-right: solid 1px #979797; }
+    @media (max-width: 1024px) {
+      .join-us .places {
+        width: 250px; } }
+    @media (max-width: 768px) {
+      .join-us .places {
+        width: 150px;
+        height: 250px; } }
+    @media (max-width: 425px) {
+      .join-us .places {
+        width: 90px;
+        height: 230px; } }
+    .join-us .places li {
+      margin: 0 0 40px 0; }
+      .join-us .places li .section-heading {
+        font-size: 28px;
+        color: #9b9b9b;
+        cursor: pointer; }
+        @media (max-width: 768px) {
+          .join-us .places li .section-heading {
+            font-size: 20px;
+            margin: 0 0 20px 0; } }
+        .join-us .places li .section-heading.active {
+          color: #000000; }
       @media (max-width: 768px) {
-        .contact .contact-details ul li {
-          line-height: 20px; } }
-      .contact .contact-details ul li .section-heading {
-        font-size: 32px;
-        margin-bottom: 25px; }
-      .contact .contact-details ul li a {
-        color: #000000;
-        text-decoration: none; }
+        .join-us .places li {
+          margin: 0 0 20px 0; } }
+  .join-us .openings {
+    opacity: 0;
+    margin: 0 0 0 80px;
+    float: left;
+    width: 400px;
+    height: 0;
+    -webkit-transition: 0.5s opacity ease-in;
+    transition: 0.5s opacity ease-in; }
+    @media (max-width: 768px) {
+      .join-us .openings {
+        width: 200px; } }
+    @media (max-width: 425px) {
+      .join-us .openings {
+        width: 200px;
+        margin: 0 0 0 10px; } }
+    .join-us .openings li:first-child {
+      color: #000000;
+      font-family: Helvetica Neue, Arial, sans-serif;
+      font-size: 36px; }
+      @media (max-width: 768px) {
+        .join-us .openings li:first-child {
+          font-size: 25px; } }
+      @media (max-width: 425px) {
+        .join-us .openings li:first-child {
+          font-size: 20px; } }
+    .join-us .openings .section-content {
+      line-height: 70px; }
+      @media (max-width: 768px) {
+        .join-us .openings .section-content {
+          line-height: 40px; } }
+    .join-us .openings.active {
+      opacity: 1; }
 
-/*# sourceMappingURL=../../maps/pages/contact.css.map */
+/*# sourceMappingURL=../../maps/pages/joinuschennai.css.map */
