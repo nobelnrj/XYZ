@@ -418,41 +418,43 @@ footer {
   background: #e7f4fe33;
   border-top: solid 2px #bbbbbb33;
   padding: 50px 0; }
-  footer div ul {
-    float: left;
-    list-style: none; }
-    footer div ul li:first-child {
-      font-size: 26px;
-      font-family: Helvetica Neue, Arial, sans-serif;
-      color: #000000;
-      margin-bottom: 25px; }
-      @media (max-width: 768px) {
+  footer div {
+    text-align: justify; }
+    footer div ul {
+      display: inline-block;
+      font-size: 0;
+      vertical-align: top;
+      text-align: left;
+      list-style: none; }
+      footer div ul li {
+        vertical-align: middle; }
         footer div ul li:first-child {
-          font-size: 15px;
-          font-weight: bold; } }
-    footer div ul li a {
-      font-size: 20px;
-      line-height: 50px;
-      color: #9b9b9b;
-      font-family: "Open Sans", sans-serif; }
-      @media (max-width: 768px) {
+          font-size: 26px;
+          font-family: Helvetica Neue, Arial, sans-serif;
+          color: #000000;
+          margin-bottom: 25px; }
+          @media (max-width: 768px) {
+            footer div ul li:first-child {
+              font-size: 15px;
+              font-weight: bold; } }
         footer div ul li a {
-          font-size: 15px;
-          line-height: 30px; } }
-  footer div .full {
-    width: 20%; }
-    @media (max-width: 425px) {
-      footer div .full {
-        width: 40%; } }
-  footer div .policies, footer div .others {
-    width: 20%; }
-    @media (max-width: 425px) {
-      footer div .policies, footer div .others {
-        width: 50%; } }
-  footer div .products {
-    width: 40%; }
-    @media (max-width: 425px) {
-      footer div .products {
-        width: 60%; } }
+          font-size: 20px;
+          line-height: 50px;
+          color: #9b9b9b;
+          font-family: "Open Sans", sans-serif; }
+          @media (max-width: 768px) {
+            footer div ul li a {
+              font-size: 15px;
+              line-height: 30px; } }
+          @media (max-width: 425px) {
+            footer div ul li a {
+              font-size: 12px; } }
+      @media (max-width: 425px) {
+        footer div ul.others {
+          margin: 0 120px 0 0; } }
+    footer div::after {
+      content: '';
+      display: inline-block;
+      width: 100%; }
 
 /*# sourceMappingURL=../maps/style.css.map */

@@ -3,10 +3,15 @@ footer{
     border-top: solid 2px #bbbbbb33;
     padding: 50px 0;
     div{
+        text-align: justify;
         ul{ 
-            float: left;
+            display: inline-block;
+            font-size:0;
+            vertical-align: top;
+            text-align: left;
             list-style: none;
             li{
+                vertical-align: middle;
                 &:first-child{
                     font-size: 26px;
                     font-family: $primary-font;
@@ -26,26 +31,21 @@ footer{
                         font-size: 15px;
                         line-height: 30px;
                     }
+                    @include bp(phone){
+                        font-size: 12px;
+                    }
+                }
+            }
+            @include bp(phone){
+                &.others{
+                    margin: 0 120px 0 0;
                 }
             }
         }
-        .full{
-            width: 20%;
-            @include bp(phone){
-                width: 40%;
-            }
-        }
-        .policies , .others{
-            width: 20%;
-            @include bp(phone){
-                width: 50%;
-            }
-        }
-        .products{
-            width: 40%;
-            @include bp(phone){
-                width: 60%;
-            }
+        &::after{
+            content:'';
+            display:inline-block;
+            width:100%;
         }
     }
 }
