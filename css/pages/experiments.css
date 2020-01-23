@@ -247,19 +247,19 @@ header {
     z-index: 10; }
 
 .hero#home {
-  background-image: url(/img/hero-home.png); }
+  background-image: url(../img/hero-home.png); }
 
 .hero#experiment {
-  background-image: url(/img/globe.png); }
+  background-image: url(../../img/globe.png); }
 
 .hero#articles {
-  background-image: url(/img/smile.png); }
+  background-image: url(../../img/smile.png); }
 
 .hero#joinus {
-  background-image: url(/img/india.png); }
+  background-image: url(../../img/india.png); }
 
 .hero#contactus {
-  background-image: url(/img/contact.png); }
+  background-image: url(../../img/contact.png); }
 
 .experiments {
   position: relative;

@@ -23,14 +23,14 @@ function concatCSS() {
         .pipe(sourcemap.init({loadMaps: true, largeFile: true}))
         .pipe(uglifycss())
         .pipe(sourcemap.write('../maps'))
-        .pipe(gulp.dest('./dist/css'));
+        .pipe(gulp.dest('./docs/css'));
 }
 
 function javascript() {
     return gulp.src('./js/*.js')
         .pipe(concat('main.js'))
         .pipe(uglify())
-        .pipe(gulp.dest('./dist/js'));
+        .pipe(gulp.dest('./docs/js'));
 }
 
 function imgmin() {
@@ -39,18 +39,18 @@ function imgmin() {
         imagemin.jpegtran({progressive: true}),
         imagemin.optipng({optimizationLevel: 5})
     ]))
-    .pipe( gulp.dest('./dist/img'));
+    .pipe( gulp.dest('./docs/img'));
 }
 
 function watch() {
     browserSync.init({
         server: {
-            baseDir: './dist/'
+            baseDir: './docs/'
         }
     });
     gulp.watch('./scss/**/*.scss').on('change', gulp.series([style,concatCSS,browserSync.reload]));
     gulp.watch('./js/**/*.js').on('change',gulp.series([javascript,browserSync.reload]));
-    gulp.watch('./dist/**/*.html').on('change', browserSync.reload);
+    gulp.watch('./docs/**/*.html').on('change', browserSync.reload);
 }
 
 exports.style = style;
